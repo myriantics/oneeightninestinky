@@ -1,4 +1,4 @@
-package net.myriantics.template;
+package net.myriantics.oneeightninestinky;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;

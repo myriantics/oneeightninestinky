@@ -28,7 +28,6 @@ fabricApi {
 }
 
 loom {
-	splitEnvironmentSourceSets()
 }
 
 dependencies {

@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "template",
+	"id": "oneeightninestinky",
 	"version": "${version}",
 	"name": "${mod_name}",
 	"description": "${mod_description}",
@@ -13,29 +13,22 @@
 	},
 	"license": "MIT",
 	"icon": "assets/template/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"main": [
-			"net.myriantics.template.TemplateMod"
-		],
-		"client": [
-			"net.myriantics.template.TemplateModClient"
+			"net.myriantics.oneeightninestinky.OneEightNineStinky"
 		],
 		"fabric-datagen": [
-			"net.myriantics.template.TemplateModDataGenerator"
+			"net.myriantics.oneeightninestinky.TemplateModDataGenerator"
 		]
 	},
 	"mixins": [
-		"template.mixins.json",
-		{
-			"config": "template.client.mixins.json",
-			"environment": "client"
-		}
+		"oneeightninestinky.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=${loader_version}",
 		"minecraft": "${minecraft_version}",
-		"java": ">=17",
+		"java": ">=25",
 		"fabric-api": ">=${fabric_api_version}"
 	},
 	"suggests": {
