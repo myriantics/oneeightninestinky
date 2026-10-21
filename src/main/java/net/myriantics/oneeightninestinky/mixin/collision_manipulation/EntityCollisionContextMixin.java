@@ -1,4 +1,4 @@
-package net.myriantics.oneeightninestinky.mixin;
+package net.myriantics.oneeightninestinky.mixin.collision_manipulation;
 
 import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;

@@ -36,7 +36,7 @@ public class OneEightNineStinky implements ModInitializer {
 		return false;
 	}
 
-	private static boolean isAny(BlockState state, Block... blocks) {
+	public static boolean isAny(BlockState state, Block... blocks) {
 		for (Block block : blocks) {
 			if (state.is(block)) {
 				return true;
