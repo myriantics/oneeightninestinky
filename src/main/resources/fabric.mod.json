@@ -13,7 +13,7 @@
 	},
 	"license": "MIT",
 	"icon": "assets/template/icon.png",
-	"environment": "client",
+	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"net.myriantics.oneeightninestinky.OneEightNineStinky"
@@ -23,7 +23,11 @@
 		]
 	},
 	"mixins": [
-		"oneeightninestinky.mixins.json"
+		"oneeightninestinky.mixins.json",
+		{
+			"environment": "client",
+			"config": "oneeightninestinky.client.mixins.json"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=${loader_version}",

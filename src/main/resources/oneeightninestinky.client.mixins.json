@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "net.myriantics.oneeightninestinky.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"client.minecraft.collision_manipulation.EntityCollisionContextMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

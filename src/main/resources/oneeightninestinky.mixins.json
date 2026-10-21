@@ -3,8 +3,7 @@
 	"package": "net.myriantics.oneeightninestinky.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"collision_manipulation.EntityCollisionContextMixin",
-		"legacy_hitbox.AnvilBlockMixin"
+		"common.legacy_hitbox.AnvilBlockMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

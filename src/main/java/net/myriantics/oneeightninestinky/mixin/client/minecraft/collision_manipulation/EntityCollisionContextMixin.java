@@ -1,9 +1,10 @@
-package net.myriantics.oneeightninestinky.mixin.collision_manipulation;
+package net.myriantics.oneeightninestinky.mixin.client.minecraft.collision_manipulation;
 
 import com.llamalad7.mixinextras.injector.wrapmethod.WrapMethod;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.CollisionGetter;
@@ -28,9 +29,9 @@ public abstract class EntityCollisionContextMixin implements CollisionContext {
             method = "getCollisionShape"
     )
     private VoxelShape oneEightNineStinky$overrideCollisionShapeWithSelectedIfValid(BlockState state, CollisionGetter collisionGetter, BlockPos pos, Operation<VoxelShape> original) {
-        if (this.entity instanceof LocalPlayer) {
+        if (this.entity != null) {
             HitResult result = Minecraft.getInstance().hitResult;
-            if (result.getType() == HitResult.Type.BLOCK && result instanceof BlockHitResult blockHitResult) {
+            if (result != null && result.getType() == HitResult.Type.BLOCK && result instanceof BlockHitResult blockHitResult) {
                 BlockPos crosshairTargetedPos = blockHitResult.getBlockPos();
                 if (!crosshairTargetedPos.equals(pos)) {
 
