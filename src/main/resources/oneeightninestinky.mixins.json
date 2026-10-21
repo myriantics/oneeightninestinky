@@ -3,8 +3,7 @@
 	"package": "net.myriantics.oneeightninestinky.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin",
-		"ShitMixin"
+		"EntityCollisionContextMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
